@@ -8,5 +8,5 @@ ncu -u
 npm install
 git add -A
 git status
-git commit -m "automated 'composer update'"
+git commit -m "automated dependencies update"
 git push --repo "https://umihico:${GITHUB_REPOSITORY_TOKEN}@github.com/umihico/umihi.co"

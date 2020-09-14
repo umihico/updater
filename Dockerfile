@@ -13,6 +13,9 @@ RUN npm install -g npm-check-updates
 
 RUN apt install hub -y
 
+RUN composer global require laravel/installer
+RUN composer create-project --prefer-dist laravel/laravel cache
+
 RUN git config --global user.email "umihico@users.noreply.github.com"
 RUN git config --global user.name "umihico"
 WORKDIR /root
